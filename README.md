@@ -78,12 +78,7 @@ This app provides:
 7. Open in browser 👉 [http://localhost:8000](http://localhost:8000)
 
 ---
-
-## 📸 Screenshots (Optional)
-
-*Add some preview images of the dashboard & landing page here.*
-
----
+ 
 
 ## 👨‍💻 Author
 
