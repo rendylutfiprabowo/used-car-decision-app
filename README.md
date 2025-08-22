@@ -46,8 +46,10 @@ This app provides:
 2. 📦 Setup dependencies:
 
    ```bash
-   unzip node_modules.zip
+   unzip node_modules.zip 
    mv node_modules used-car-decision-app/
+   unzip public.zip
+   mv public used-car-decision-app/
    composer install
    ```
 
@@ -75,8 +77,10 @@ This app provides:
    php artisan serve
    ```
 
-7. Open in browser 👉 [http://localhost:8000](http://localhost:8000)
-
+7. Open in browser 👉
+   public access : [[http://127.0.0.1:8000/](http://127.0.0.1:8000/)]
+   admin access : [[http://127.0.0.1:8000/login](http://127.0.0.1:8000//login)]
+   admin account: (us: admincda / pw: 12345678)
 ---
  
 
