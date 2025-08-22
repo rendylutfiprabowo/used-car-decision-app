@@ -78,11 +78,16 @@ This app provides:
    ```
 
 7. Open in browser 👉
-   ```bash
+    
    public access : [[http://127.0.0.1:8000/](http://127.0.0.1:8000/)]
-   admin access : [[http://127.0.0.1:8000/login](http://127.0.0.1:8000/login)] 
-   admin account: (us: admincda / pw: 12345678)
+   admin access : [[http://127.0.0.1:8000/login](http://127.0.0.1:8000/login)]
+
+8. Admin Acccess
+   ```bash
+   us: admincda
+   pw: 12345678
    ```
+   
 ---
  
 
@@ -90,6 +95,4 @@ This app provides:
 
 Developed by [**Rendy Lutfi Prabowo**](https://github.com/rendylutfiprabowo)
 
----
-
-Mau saya bikinkan juga **tabel "criteria & attributes contoh (Price, Mileage, Year, Condition, Brand)"** di README biar langsung jelas gambaran yang dipakai dalam MAUT?
+--- 
