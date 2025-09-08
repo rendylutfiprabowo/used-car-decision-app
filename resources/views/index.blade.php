@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,9 @@
     <!-- App favicon -->
     <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
     @vite('resources/css/app.css')
-    <link href="https://coderthemes.com/ubold/layouts/assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet"
-        type="text/css" />
+    <!-- SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -347,7 +348,7 @@
             </section>
 
             <!-- FontAwesome -->
-            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            {{-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> --}}
 
 
             <section class="relative py-10 bg-gray-50" id="kontak">
@@ -529,7 +530,8 @@
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://coderthemes.com/ubold/layouts/assets/libs/sweetalert2/sweetalert2.all.min.js"></script>
+    {{-- <script src="https://coderthemes.com/ubold/layouts/assets/libs/sweetalert2/sweetalert2.all.min.js"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <script>
@@ -834,15 +836,15 @@
                 ${carSecondStepScores.map((car, index) => {
                     const carFullData = cars[index];
                     return `
-                                                                                                                                            <tr class="border-b border-gray-200 p-5">
-                                                                                                                                                <td>${carFullData.name}</td>
-                                                                                                                                                <td>${car[0].toFixed(3)}</td>
-                                                                                                                                                <td>${car[1].toFixed(3)}</td>
-                                                                                                                                                <td>${car[2].toFixed(3)}</td>
-                                                                                                                                                <td>${car[3].toFixed(3)}</td>
-                                                                                                                                                <td>${car[4].toFixed(3)}</td>
-                                                                                                                                            </tr>
-                                                                                                                                        `;
+                                                                                                                                                    <tr class="border-b border-gray-200 p-5">
+                                                                                                                                                        <td>${carFullData.name}</td>
+                                                                                                                                                        <td>${car[0].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[1].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[2].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[3].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[4].toFixed(3)}</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                `;
                 }).join('')}
             `;
 
@@ -851,15 +853,15 @@
                 ${carThirdStepScores.map((car, index) => {
                     const carFullData = cars[index];
                     return `
-                                                                                                                                            <tr class="border-b border-gray-200 p-5">
-                                                                                                                                                <td>${carFullData.name}</td>
-                                                                                                                                                <td>${car[0].toFixed(3)}</td>
-                                                                                                                                                <td>${car[1].toFixed(3)}</td>
-                                                                                                                                                <td>${car[2].toFixed(3)}</td>
-                                                                                                                                                <td>${car[3].toFixed(3)}</td>
-                                                                                                                                                <td>${car[4].toFixed(3)}</td>
-                                                                                                                                            </tr>
-                                                                                                                                        `;
+                                                                                                                                                    <tr class="border-b border-gray-200 p-5">
+                                                                                                                                                        <td>${carFullData.name}</td>
+                                                                                                                                                        <td>${car[0].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[1].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[2].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[3].toFixed(3)}</td>
+                                                                                                                                                        <td>${car[4].toFixed(3)}</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                `;
                 }).join('')}
             `;
 
@@ -868,11 +870,11 @@
                 ${carFinalScores.map((score, index) => {
                     const carFullData = cars[index];
                     return `
-                                                                                                                                            <tr class="border-b border-gray-200 p-5">
-                                                                                                                                                <td>${carFullData.name}</td>
-                                                                                                                                                <td>${score.toFixed(3)}</td>
-                                                                                                                                            </tr>
-                                                                                                                                        `;
+                                                                                                                                                    <tr class="border-b border-gray-200 p-5">
+                                                                                                                                                        <td>${carFullData.name}</td>
+                                                                                                                                                        <td>${score.toFixed(3)}</td>
+                                                                                                                                                    </tr>
+                                                                                                                                                `;
                 }).join('')}
             `;
 

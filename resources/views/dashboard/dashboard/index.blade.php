@@ -7,7 +7,7 @@
 
          {{-- Card total mobil --}}
          <div class="mb-6">
-             <div class="mt-4 p-4 bg-blue-600 text-white rounded-lg shadow">
+             <div class="mt-4 p-4 bg-white text-white rounded-lg shadow">
                  <h3 class="text-lg">Total Mobil Tersedia</h3>
                  <h1 class="text-3xl font-bold">{{ $carCount }}</h1>
              </div>
